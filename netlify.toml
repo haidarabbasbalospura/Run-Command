@@ -1,3 +1,6 @@
 [build]
-  functions = "netlify/functions"  # Path to your serverless functions
-  publish = "public"  # If you're serving static files (like from a React app), you need to specify this
+  functions = "netlify/functions"  # Specify the correct directory for your functions
+  # Remove the `publish` setting if you don't need static assets
+
+[functions]
+  node_bundler = "esbuild"  # Optional: if you're using esbuild for bundling
