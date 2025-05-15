@@ -1,3 +1,4 @@
 [build]
   functions = "netlify/functions"
-  publish = "public"
+  # Remove or comment out the 'publish' line since we're not serving static files
+  # publish = "public"
