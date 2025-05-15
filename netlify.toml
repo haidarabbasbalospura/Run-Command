@@ -1,4 +1,3 @@
 [build]
-  functions = "netlify/functions"
-  # Comment out or remove the 'publish' line entirely as it's not needed
-  # publish = "public"
+  functions = "netlify/functions"  # Path to your serverless functions
+  publish = "public"  # If you're serving static files (like from a React app), you need to specify this
