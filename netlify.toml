@@ -1,6 +1,7 @@
 [build]
-  functions = "netlify/functions"  # Specify the correct directory for your functions
-  # Remove the `publish` setting if you don't need static assets
+  base = "/opt/build/repo"
+  functions = "netlify/functions"  # Location of serverless functions
+  publish = "build"  # Points to the directory where static files are output after build
 
 [functions]
-  node_bundler = "esbuild"  # Optional: if you're using esbuild for bundling
+  node_bundler = "esbuild"  # Optional if you're using esbuild for bundling
